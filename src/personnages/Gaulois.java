@@ -1,19 +1,28 @@
-
-public class Romain {
+package personnages;
+public class Gaulois {
 	private String nom;
 	private int force;
-	public Romain(String nom, int force) {
+
+	public Gaulois(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
 	}
+
 	public String getNom() {
 		return nom;
 	}
+
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 	}
+
 	private String prendreParole() {
-		return "Le romain " + nom + " : ";
+		return "Le gaulois " + nom + " : ";
+	}
+	
+	public static void main(String[] args) {
+		Gaulois gauloix=new Gaulois("Astérix", 8);
+		System.out.println(gauloix);
 	}
 }
 
