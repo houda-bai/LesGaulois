@@ -12,15 +12,17 @@ public class Chaudron {
 	public boolean resterPotion() {
 		return quantitePotion > 0;
 	}
+
 	public void remplirChaudron(int quantite, int forcePotion) {
-	    this.quantitePotion = quantite;
-	    this.forcePotion = forcePotion;
+		this.quantitePotion = quantite;
+		this.forcePotion = forcePotion;
 	}
+
 	public int prendreLouche() {
-	    if (quantitePotion > 0) {
-	        quantitePotion--;  
-	        return forcePotion;
-	    }
-	    return 0;  
+		if (quantitePotion > 0) {
+			quantitePotion--;
+			return forcePotion;
+		}
+		return 0;
 	}
 }

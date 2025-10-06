@@ -24,7 +24,7 @@ public class Druide {
 	}
 	public void fabriquerPotion(int quantite, int forcePotion) {
 	    this.chaudron.remplirChaudron(quantite, forcePotion);
-	    parler("J'ai concocté " + quantite + " doses de potion magique. Elle a une force de " + forcePotion + ".");
+	    parler("J'ai concocte " + quantite + " doses de potion magique. Elle a une force de " + forcePotion + ".");
 	}
 	public void booster(Gaulois gaulois) {
 	    if (chaudron.resterPotion()) {
@@ -36,7 +36,7 @@ public class Druide {
 	            parler("Tiens " + gaulois.getNom() + " un peu de potion magique.");
 	        }
 	    } else {
-	        parler("Désolé " + gaulois.getNom() + " il n'y a plus une seule goutte de potion.");
+	        parler("Desole " + gaulois.getNom() + " il n'y a plus une seule goutte de potion.");
 	    }
 	}
 }

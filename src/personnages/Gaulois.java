@@ -1,7 +1,5 @@
 package personnages;
 
-import javax.sound.midi.SysexMessage;
-
 public class Gaulois {
 	private String nom;
 	private int force;
@@ -24,11 +22,6 @@ public class Gaulois {
 		return "Le gaulois " + nom + " : ";
 	}
 
-	public static void main(String[] args) {
-		Gaulois gauloix = new Gaulois("Ast�rix", 8);
-		System.out.println(gauloix.getNom());
-	}
-
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + "]";
 	}
@@ -42,8 +35,13 @@ public class Gaulois {
 	}
 	public void boirePotion(int forcePotion) {
         this.effetPotion = forcePotion;
-        parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée.");
+        parler("Merci Druide, je sens que ma force est " + forcePotion + " fois decuplee.");
     }
 
+
+	public static void main(String[] args) {
+		Gaulois gauloix = new Gaulois("Ast�rix", 8);
+		System.out.println(gauloix.getNom());
+	}
 	
 }
